@@ -7,16 +7,58 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="0dp"
+        android:id="@+id/id_textbox_one"
+        style="@style/WhiteBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Hello World!"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="@dimen/margin_width"
+        android:layout_marginTop="@dimen/margin_width"
+        android:layout_marginRight="@dimen/margin_width"
+        android:text="@string/text_boxOne"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_textbox_two"
+        style="@style/WhiteBox"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_boxTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_textbox_one" />
+
+    <TextView
+        android:id="@+id/id_textbox_three"
+        style="@style/WhiteBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_boxThree"
+        app:layout_constraintBottom_toTopOf="@+id/id_textbox_four"
+        app:layout_constraintTop_toTopOf="@+id/id_textbox_two"
+        tools:layout_editor_absoluteX="198dp" />
+
+    <TextView
+        android:id="@+id/id_textbox_four"
+        style="@style/WhiteBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_boxFour"
+        app:layout_constraintBottom_toTopOf="@+id/id_textbox_five"
+        app:layout_constraintTop_toBottomOf="@+id/id_textbox_three"
+        tools:layout_editor_absoluteX="198dp" />
+
+    <TextView
+        android:id="@+id/id_textbox_five"
+        style="@style/WhiteBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_boxFive"
+        app:layout_constraintBottom_toBottomOf="@+id/id_textbox_two"
+        app:layout_constraintTop_toBottomOf="@+id/id_textbox_four"
+        tools:layout_editor_absoluteX="198dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
