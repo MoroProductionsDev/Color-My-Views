@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <TextView
         android:id="@+id/id_textbox_one"
         style="@style/WhiteBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
         android:layout_marginStart="@dimen/margin_width"
         android:layout_marginTop="@dimen/margin_width"
-        android:layout_marginRight="@dimen/margin_width"
+        android:layout_marginEnd="16dp"
         android:text="@string/text_boxOne"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,8 +27,8 @@
         style="@style/WhiteBox"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="@dimen/margin_width"
+        android:layout_marginTop="12dp"
         android:text="@string/text_boxTwo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_textbox_one" />
@@ -34,31 +36,44 @@
     <TextView
         android:id="@+id/id_textbox_three"
         style="@style/WhiteBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/margin_width"
+        android:layout_marginEnd="@dimen/margin_width"
         android:text="@string/text_boxThree"
-        app:layout_constraintBottom_toTopOf="@+id/id_textbox_four"
-        app:layout_constraintTop_toTopOf="@+id/id_textbox_two"
-        tools:layout_editor_absoluteX="198dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/id_textbox_two"
+        app:layout_constraintTop_toTopOf="@+id/id_textbox_two" />
 
     <TextView
         android:id="@+id/id_textbox_four"
         style="@style/WhiteBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/margin_width"
+        android:layout_marginEnd="@dimen/margin_width"
+        android:layout_marginBottom="@dimen/margin_width"
         android:text="@string/text_boxFour"
         app:layout_constraintBottom_toTopOf="@+id/id_textbox_five"
-        app:layout_constraintTop_toBottomOf="@+id/id_textbox_three"
-        tools:layout_editor_absoluteX="198dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toEndOf="@+id/id_textbox_two"
+        app:layout_constraintTop_toBottomOf="@+id/id_textbox_three" />
 
     <TextView
         android:id="@+id/id_textbox_five"
         style="@style/WhiteBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/margin_width"
+        android:layout_marginEnd="@dimen/margin_width"
         android:text="@string/text_boxFive"
         app:layout_constraintBottom_toBottomOf="@+id/id_textbox_two"
-        app:layout_constraintTop_toBottomOf="@+id/id_textbox_four"
-        tools:layout_editor_absoluteX="198dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/id_textbox_two"
+        app:layout_constraintTop_toBottomOf="@+id/id_textbox_four" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
