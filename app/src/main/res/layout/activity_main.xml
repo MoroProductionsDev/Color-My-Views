@@ -105,4 +105,42 @@
         app:layout_constraintTop_toBottomOf="@+id/id_textbox_two"
         app:layout_constraintVertical_bias="0.078" />
 
+    <Button
+        android:id="@+id/id_red_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/text_btn_Red"
+        app:layout_constraintBaseline_toBaselineOf="@+id/id_yellow_btn"
+        app:layout_constraintEnd_toStartOf="@+id/id_yellow_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/id_green_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/text_btn_Green"
+        app:layout_constraintBaseline_toBaselineOf="@+id/id_yellow_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/id_yellow_btn" />
+
+    <Button
+        android:id="@+id/id_yellow_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/text_btn_Yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id_green_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/id_red_btn"
+        app:layout_constraintTop_toBottomOf="@+id/text_info_text"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
